@@ -1,38 +1,40 @@
 {
-  "name": "threejs-starter",
+  "name": "wormhole-thingy",
   "version": "1.0.0",
-  "description": "*Get started with Three.js to render 3d Web Experience*",
-  "main": "index.js",
+  "description": "*a wormhole render I made in webgl*",
+  "main": "index.ts",
   "scripts": {
     "build": "webpack --config ./bundler/webpack.prod.js",
     "dev": "webpack-dev-server --config ./bundler/webpack.dev.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mohnishlandge/threejs-template.git"
+    "url": "git+https://github.com/withertech/WormholeThingy.git"
   },
   "keywords": [],
-  "author": "Mohnish Landge",
-  "license": "ISC",
+  "author": "Witherking25",
+  "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/mohnishlandge/threejs-template/issues"
+    "url": "https://github.com/withertech/WormholeThingy/issues"
   },
-  "homepage": "https://github.com/mohnishlandge/threejs-template#readme",
+  "homepage": "https://github.com/withertech/WormholeThingy#readme",
   "devDependencies": {
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
+    "@babel/preset-typescript": "^7.16.7",
     "babel-loader": "^8.1.0",
     "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^5.1.1",
     "css-loader": "^3.5.3",
     "file-loader": "^6.0.0",
     "glslify-loader": "^2.0.0",
+    "gsap": "^3.9.1",
     "html-loader": "^1.1.0",
     "html-webpack-plugin": "^4.3.0",
     "raw-loader": "^4.0.1",
     "style-loader": "^1.2.1",
     "three": "^0.116.1",
-    "gsap": "^3.9.1",
+    "typescript": "^4.5.5",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.11.0",

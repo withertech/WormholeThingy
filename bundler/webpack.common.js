@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const path = require('path')
 
 module.exports = {
-    entry: path.resolve(__dirname, '../src/index.js'),
+    entry: path.resolve(__dirname, '../src/index.ts'),
     output:
     {
         filename: 'bundle.[hash].js',
@@ -35,6 +35,21 @@ module.exports = {
                 use:
                 [
                     'babel-loader'
+                ]
+            },
+
+            // TS
+            {
+                test: /\.ts$/,
+                exclude: /node_modules/,
+                use:
+                [
+                    {
+                        loader: 'babel-loader',
+                        options: {
+                            presets: ['@babel/preset-typescript']
+                        }
+                    }
                 ]
             },
 
